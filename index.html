@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Portal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4 portal-title">Feedback Portal</h2>
+
+        <!-- Feedback Form -->
+        <div class="card p-4 mb-4 glass-card">
+            <form id="feedbackForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control input-glass" id="name" placeholder="Enter your name"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control input-glass" id="email" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="feedback" class="form-label">Feedback</label>
+                    <textarea class="form-control input-glass" id="feedback" rows="4" placeholder="Enter your feedback"
+                        required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Rating</label>
+                    <div id="rating" class="d-flex rating-container">
+                        <span class="star" data-value="1">&#9734;</span>
+                        <span class="star" data-value="2">&#9734;</span>
+                        <span class="star" data-value="3">&#9734;</span>
+                        <span class="star" data-value="4">&#9734;</span>
+                        <span class="star" data-value="5">&#9734;</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-glass">Submit Feedback</button>
+            </form>
+            <button id="clearFeedbacks" class="btn btn-danger btn-glass mt-3">Clear All Feedbacks</button>
+        </div>
+
+        <!-- Feedback Display -->
+        <h4 class="mb-3 portal-title">Submitted Feedback</h4>
+        <ul class="list-group glass-card" id="feedbackList"></ul>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

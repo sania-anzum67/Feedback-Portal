@@ -1,0 +1,95 @@
+/* General background */
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Portal title */
+.portal-title {
+    color: #1a1818;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Glass card style */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Glass input fields */
+.input-glass {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    color: #363333;
+    transition: all 0.3s;
+}
+
+.input-glass::placeholder {
+    color: #4d4949;
+}
+
+.input-glass:focus {
+    background: rgba(255, 255, 255, 0.35);
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Glass buttons */
+.btn-glass {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #3e3b3b;
+    transition: all 0.3s;
+}
+
+.btn-glass:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Feedback list items */
+#feedbackList li {
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 15px;
+    color: #474545;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#feedbackList li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Star rating */
+.star {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #353434;
+    margin-right: 5px;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.star:hover,
+.star:hover~.star,
+.star.selected {
+    color: gold;
+    transform: scale(1.3);
+}
